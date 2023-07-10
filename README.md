@@ -1,5 +1,4 @@
 <h1 align="center">Hi 👋, I'm David!</h1>
-<h3 align="center">I'm a developer working in all kind of stuff, Web, API's, Apps!</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=dacxjo&label=Profile%20views&color=0e75b6&style=flat" alt="dacxjo" /> </p>
 <p align="left"> <img src="https://www.codewars.com/users/dacxjo/badges/small" /> </p>
