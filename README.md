@@ -6,6 +6,9 @@
         <p align="left">
           <img src="https://komarev.com/ghpvc/?username=dacxjo&label=Profile%20views&color=0e75b6&style=flat" alt="dacxjo" />
         </p>
+        <p>
+          <img src="https://img.shields.io/badge/dynamic/json?style=flat&labelColor=black&color=%23ffa116&label=Solved&query=solvedOverTotal&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fdacxjo&logo=leetcode&logoColor=yellow" alt="leetcode" />
+        </p>
         <p align="left">
           <img src="https://www.codewars.com/users/dacxjo/badges/small" />
         </p>
