@@ -12,9 +12,7 @@
         <p align="left">
           <img src="https://www.codewars.com/users/dacxjo/badges/small" />
         </p>
-        <a href="https://roadmap.sh">
-          <img src="https://api.roadmap.sh/v1-badge/tall/64abb40714678473bb5dcb8b?variant=light&roadmaps=nodejs%2Creact"       alt="roadmap.sh"/>
-        </a>
+      <a href="https://roadmap.sh"><img src="https://api.roadmap.sh/v1-badge/tall/64abb40714678473bb5dcb8b?variant=light" alt="roadmap.sh"/></a>
       </div>
     </td>
     <td>
