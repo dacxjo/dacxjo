@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm David!</h1>
 <table>
   <tr>
-    <td width="350px">
+    <td width="350px" style="vertical-align:top">
       <div>
         <p align="left">
           <img src="https://komarev.com/ghpvc/?username=dacxjo&label=Profile%20views&color=0e75b6&style=flat" alt="dacxjo" />
@@ -12,7 +12,7 @@
         <p align="left">
           <img src="https://www.codewars.com/users/dacxjo/badges/small" />
         </p>
-      <a href="https://roadmap.sh"><img src="https://api.roadmap.sh/v1-badge/wide/64abb40714678473bb5dcb8b?variant=light&roadmaps=react%2Cnodejs%2Cpostgresql-dba%2Ctypescript" alt="roadmap.sh"/></a>
+   <a href="https://roadmap.sh"><img src="https://api.roadmap.sh/v1-badge/tall/64abb40714678473bb5dcb8b?variant=light&roadmaps=react%2Cnodejs%2Cpostgresql-dba%2Ctypescript" alt="roadmap.sh"/></a>
       </div>
     </td>
     <td>
