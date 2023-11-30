@@ -6,7 +6,7 @@
                 <img src="https://img.shields.io/badge/dynamic/json?style=flat&labelColor=black&color=%23ffa116&label=Solved&query=solvedOverTotal&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fdacxjo&logo=leetcode&logoColor=yellow" alt="leetcode" />
             </p>
             <p align="left">
-                <img src="https://www.codewars.com/users/dacxjo/badges/small" alt="codewars" />
+                <img src="https://www.codewars.com/users/dacxjo/badges/small" alt="codewars2" />
             </p>
     <a href="https://roadmap.sh"><img src="https://api.roadmap.sh/v1-badge/wide/64abb40714678473bb5dcb8b?variant=light&roadmaps=react%2Ctypescript%2Cpython%2Cai-data-scientist" alt="roadmapUpdate"/></a>
             </a>
