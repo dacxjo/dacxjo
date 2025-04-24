@@ -14,7 +14,7 @@
             </p>
     <a href="https://roadmap.sh/u/dacxjo"><img src="https://roadmap.sh/card/wide/64abb40714678473bb5dcb8b?variant=light&roadmaps=ai-data-scientist%2Cpython%2Creact%2Ctypescript" alt="roadmap"/></a>
             </a>
-            <img src="https://github-readme-stats.vercel.app/api/top-langs?username=dacxjo&show_icons=true&locale=en&layout=compact&theme=vue" alt="dacxjo2" />
+            <img src="https://github-readme-stats.vercel.app/api/top-langs?username=dacxjo&show_icons=true&locale=en&layout=compact&theme=vue" alt="dacxjo" />
         </td>
         <td>
             <p align="left">
