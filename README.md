@@ -21,7 +21,7 @@
                 <img src="https://komarev.com/ghpvc/?username=dacxjo&label=Profile%20views&color=0e75b6&style=flat" alt="dacxjo" />
             </p>
             <img width="350" src="https://github-readme-stats.vercel.app/api?username=dacxjo&show_icons=true&locale=en&theme=vue" alt="dacxjo" />
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=dacxjo&theme=vue" alt="dacxjo" />
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=dacxjo&theme=vue" alt="dacxjo2" />
         </td>
     </tr>
 </table>
