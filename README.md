@@ -1,8 +1,6 @@
-<h1 align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=3B82F6&center=true&vCenter=true&width=600&lines=Hi+%F0%9F%91%8B%2C+I'm+David+Bland%C3%B3n;Machine+Learning+%26+AI+Engineer;Software+Engineer+%7C+6%2B+years+in+production;Fine-tuning+transformers+%26+shipping+LLMs" alt="Typing SVG" />
-  </a>
-</h1>
+<p align="center">
+  <img src="./header.svg" alt="David Blandón - ML/AI Engineer" />
+</p>
 
 <p align="center">
   <a href="mailto:david.blandon@dacxjo.dev"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
