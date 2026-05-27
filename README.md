@@ -112,7 +112,7 @@
         <img src="./metrics.svg" alt="GitHub Metrics" width="100%" />
     </td>
     <td align="center" width="50%">
-      <img src="./metrics-leetcode.sg" alt="Leetcode Stats" width="100%" />
+      <img src="./metrics-leetcode.svg" alt="Leetcode Stats" width="100%" />
     </td>
   </tr>
 </table>
