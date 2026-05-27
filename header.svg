@@ -19,14 +19,10 @@
     <!-- Title gradient -->
     <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#00ffd5">
-        <animate attributeName="stop-color"
-          values="#00ffd5;#7df9ff;#a78bfa;#00ffd5"
-          dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="#00ffd5;#7df9ff;#a78bfa;#00ffd5" dur="8s" repeatCount="indefinite"/>
       </stop>
       <stop offset="100%" stop-color="#7df9ff">
-        <animate attributeName="stop-color"
-          values="#7df9ff;#a78bfa;#00ffd5;#7df9ff"
-          dur="8s" repeatCount="indefinite"/>
+        <animate attributeName="stop-color" values="#7df9ff;#a78bfa;#00ffd5;#7df9ff" dur="8s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
 
@@ -182,7 +178,7 @@
     </g>
 
     <!-- Labels below -->
-    <text x="90" y="200" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="#a78bfa" opacity="0.75">Python · TypeScript · Go</text>
+    <text x="90" y="200" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="#a78bfa" opacity="0.75">Python · TypeScript · Javascript</text>
     <text x="90" y="212" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8" fill="#7df9ff" opacity="0.6">software engineering</text>
   </g>
 
@@ -193,17 +189,12 @@
       &gt; PyTorch
     </text>
     <text x="60" y="55" opacity="0.4">
-      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="6s" repeatCount="indefinite"/>
-      &gt; timm
-    </text>
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="6s" repeatCount="indefinite"/> &gt; scikit-learn </text>
     <text x="60" y="355" opacity="0.4">
       <animate attributeName="opacity" values="0.2;0.6;0.2" dur="5.5s" repeatCount="indefinite"/>
       &gt; TensorFlow
     </text>
-    <text x="60" y="375" opacity="0.4">
-      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="4.5s" repeatCount="indefinite"/>
-      &gt; scikit-learn
-    </text>
+    
 
     <text x="1140" y="35" opacity="0.4" text-anchor="end">
       <animate attributeName="opacity" values="0.2;0.6;0.2" dur="5s" repeatCount="indefinite"/>
@@ -264,23 +255,12 @@
   </g>
 
   <!-- CENTER: Main title -->
-  <text x="600" y="180" text-anchor="middle"
-        font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif"
-        font-size="64" font-weight="800"
-        fill="url(#titleGrad)"
-        filter="url(#textGlow)"
-        letter-spacing="1">
+  <text x="600" y="180" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="64" font-weight="800" fill="url(#titleGrad)" filter="url(#textGlow)" letter-spacing="1">
     David Blandón
   </text>
 
   <!-- Subtitle -->
-  <text x="600" y="218" text-anchor="middle"
-        font-family="'JetBrains Mono', 'Courier New', monospace"
-        font-size="16" font-weight="500"
-        fill="#cbd5e1"
-        letter-spacing="2">
-    &lt; ML &amp; AI Engineer · Computer Vision · LLMs /&gt;
-  </text>
+  <text x="600" y="218" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="16" font-weight="500" fill="#cbd5e1" letter-spacing="2"> &lt; ML &amp; SWE Engineer /&gt; </text>
 
   <!-- Rotating tagline -->
   <g font-family="'JetBrains Mono', monospace" font-size="13" fill="#00ffd5" text-anchor="middle">
@@ -289,7 +269,7 @@
       <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.1;0.3;0.4;1" dur="12s" repeatCount="indefinite"/>
     </text>
     <text x="600" y="252" opacity="0">
-      fine-tuning transformers for vision tasks
+      backend, frontend, and the ML in between
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.33;0.43;0.63;0.73;1" dur="12s" repeatCount="indefinite"/>
     </text>
     <text x="600" y="252" opacity="0">
@@ -310,10 +290,10 @@
 
   <!-- Bottom status bar -->
   <g font-family="'JetBrains Mono', monospace" font-size="10" fill="#00ffd5" opacity="0.65">
-    <circle cx="30" cy="380" r="3" fill="#27c93f">
+    <circle cx="60" cy="380" r="3" fill="#27c93f">
       <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
     </circle>
-    <text x="42" y="384">Barcelona, ES · open to collaborate</text>
-    <text x="1170" y="384" text-anchor="end" fill="#a78bfa">6+ yrs · production ML</text>
+    <text x="70" y="384">Barcelona, ES </text>
+    
   </g>
 </svg>
