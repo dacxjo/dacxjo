@@ -1,0 +1,99 @@
+name: GitHub Metrics
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # === Main stats ===
+      - name: Main stats
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: dacxjo
+          template: classic
+          base: header, activity, community, repositories, metadata
+          config_timezone: Europe/Madrid
+          config_order: base.header, base.activity, base.community, base.repositories
+          config_padding: 0, 8 + 11%
+
+      # === Languages ===
+      - name: Languages
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: dacxjo
+          base: ""
+          plugin_languages: yes
+          plugin_languages_ignored: html, css, scss, less, dockerfile, makefile
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+          plugin_languages_analysis_timeout: 15
+          config_padding: 0, 8 + 11%
+
+      # === Isometric calendar ===
+      - name: Isometric calendar
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-streak.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: dacxjo
+          base: ""
+          config_timezone: Europe/Madrid
+          plugin_introduction: no
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+          config_padding: 0, 8 + 11%
+
+      # === Coding habits ===
+      - name: Habits
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-habits.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: dacxjo
+          base: ""
+          config_timezone: Europe/Madrid
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          config_padding: 0, 8 + 11%
+
+      # === LeetCode ===
+      - name: LeetCode
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-leetcode.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_leetcode: yes
+          plugin_leetcode_user: dacxj0
+          plugin_leetcode_sections: solved, skills, recent
+          plugin_leetcode_limit_skills: 8
+          plugin_leetcode_limit_recent: 5
+          config_padding: 0, 8 + 11%
+
+      # === 16personalities (MBTI) ===
+      - name: 16personalities
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics-personality.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_16personalities: yes
+          plugin_16personalities_url: ${{ secrets.SIXTEEN_PERSONALITIES_URL }}
+          plugin_16personalities_sections: personality, profile, traits
+          plugin_16personalities_scores: yes
+          config_padding: 0, 8 + 11%
