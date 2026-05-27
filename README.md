@@ -106,9 +106,17 @@
 
 ### 📊 GitHub Stats
 
-<p align="center">
-  <img src="./metrics.svg" alt="GitHub Metrics" width="50%" />
-</p>
+<table align="center">
+  <tr>
+    <td align="center" width="50%">
+        <img src="./metrics.svg" alt="GitHub Metrics" width="100%" />
+    </td>
+    <td align="center" width="50%">
+      <img src="./metrics-leetcode.sg" alt="Leetcode Stats" width="100%" />
+    </td>
+  </tr>
+</table>
+
 
 <table align="center">
   <tr>
