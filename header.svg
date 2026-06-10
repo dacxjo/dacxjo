@@ -50,6 +50,23 @@
     <pattern id="patchGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
       <rect width="20" height="20" fill="none" stroke="#a78bfa" stroke-width="0.4" stroke-opacity="0.4"/>
     </pattern>
+
+    <!-- Soft glow behind the title -->
+    <radialGradient id="titleHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ffd5" stop-opacity="0.10"/>
+      <stop offset="55%" stop-color="#7df9ff" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#00ffd5" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Pipeline gradients (vision -> name -> production) -->
+    <linearGradient id="pipeInGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7df9ff" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#00ffd5" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="pipeOutGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ffd5" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#a78bfa" stop-opacity="0.1"/>
+    </linearGradient>
   </defs>
 
   <!-- Background -->
@@ -66,10 +83,13 @@
     <line x1="1000" y1="0" x2="1000" y2="400"/>
   </g>
 
+  <!-- Halo behind title -->
+  <ellipse cx="600" cy="195" rx="330" ry="150" fill="url(#titleHalo)"/>
+
   <!-- LEFT SIDE: Computer Vision - ViT patch tokenization -->
   <g transform="translate(50, 110)">
     <!-- Image background -->
-    <rect x="0" y="0" width="180" height="180" fill="#0a1228" stroke="#7df9ff" stroke-width="1" opacity="0.8"/>
+    <rect x="0" y="0" width="180" height="180" fill="#0a1228" stroke="#7df9ff" stroke-width="1" opacity="0.8" rx="4"/>
     <rect x="0" y="0" width="180" height="180" fill="url(#imgGrad)"/>
 
     <!-- Abstract texture -->
@@ -178,7 +198,7 @@
     </g>
 
     <!-- Labels below -->
-    <text x="90" y="200" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="#a78bfa" opacity="0.75">Python · TypeScript · Javascript</text>
+    <text x="90" y="200" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" fill="#a78bfa" opacity="0.75">Python · TypeScript · JavaScript</text>
     <text x="90" y="212" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8" fill="#7df9ff" opacity="0.6">software engineering</text>
   </g>
 
@@ -190,6 +210,10 @@
     </text>
     <text x="60" y="55" opacity="0.4">
       <animate attributeName="opacity" values="0.2;0.5;0.2" dur="6s" repeatCount="indefinite"/> &gt; scikit-learn </text>
+    <text x="60" y="75" opacity="0.4">
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="4.5s" repeatCount="indefinite"/>
+      &gt; OpenCV
+    </text>
     <text x="60" y="355" opacity="0.4">
       <animate attributeName="opacity" values="0.2;0.6;0.2" dur="5.5s" repeatCount="indefinite"/>
       &gt; TensorFlow
@@ -254,27 +278,45 @@
     </circle>
   </g>
 
+  <!-- Data pipeline: vision research in -> name -> shipped software out -->
+  <g fill="none" stroke-linecap="round">
+    <path id="pipeIn" d="M 232 200 C 250 200, 244 192, 262 192" stroke="url(#pipeInGrad)" stroke-width="1.5" stroke-dasharray="5 4">
+      <animate attributeName="stroke-dashoffset" values="0;-18" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    <path id="pipeOut" d="M 938 192 C 956 192, 950 200, 968 200" stroke="url(#pipeOutGrad)" stroke-width="1.5" stroke-dasharray="5 4">
+      <animate attributeName="stroke-dashoffset" values="0;-18" dur="1.6s" repeatCount="indefinite"/>
+    </path>
+    <circle r="2.5" fill="#00ffd5" stroke="none">
+      <animateMotion dur="2.4s" repeatCount="indefinite" path="M 232 200 C 250 200, 244 192, 262 192"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle r="2.5" fill="#a78bfa" stroke="none">
+      <animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite" path="M 938 192 C 956 192, 950 200, 968 200"/>
+      <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.15;0.85;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
   <!-- CENTER: Main title -->
   <text x="600" y="180" text-anchor="middle" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="64" font-weight="800" fill="url(#titleGrad)" filter="url(#textGlow)" letter-spacing="1">
     David Blandón
   </text>
 
   <!-- Subtitle -->
-  <text x="600" y="218" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="16" font-weight="500" fill="#cbd5e1" letter-spacing="2"> &lt; ML &amp; SWE Engineer /&gt; </text>
+  <text x="600" y="218" text-anchor="middle" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="16" font-weight="500" fill="#cbd5e1" letter-spacing="2"> &lt; ML &amp; Software Engineer /&gt; </text>
 
   <!-- Rotating tagline -->
   <g font-family="'JetBrains Mono', monospace" font-size="13" fill="#00ffd5" text-anchor="middle">
     <text x="600" y="252" opacity="0">
       shipping deep-learning models to production
-      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.1;0.3;0.4;1" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.04;0.29;0.33;1" dur="12s" repeatCount="indefinite"/>
     </text>
     <text x="600" y="252" opacity="0">
       backend, frontend, and the ML in between
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.33;0.43;0.63;0.73;1" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.33;0.37;0.62;0.66;1" dur="12s" repeatCount="indefinite"/>
     </text>
     <text x="600" y="252" opacity="0">
       building scalable AI services
-      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.66;0.76;0.96;1" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.66;0.70;0.96;1" dur="12s" repeatCount="indefinite"/>
     </text>
   </g>
 
@@ -293,7 +335,7 @@
     <circle cx="60" cy="380" r="3" fill="#27c93f">
       <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
     </circle>
-    <text x="70" y="384">Barcelona, ES </text>
-    
+    <text x="70" y="384">Barcelona, ES</text>
+    <text x="600" y="384" text-anchor="middle" opacity="0.5">github.com/dacxjo</text>
   </g>
 </svg>
