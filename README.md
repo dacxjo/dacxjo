@@ -24,7 +24,7 @@
 - 🏆 Thesis on **transformer-based classification of breast cancer molecular subtypes**
 - 🔬 Interested in **transformer architectures, computer vision, machine learning and software engineering**
 - 🌍 Based in **Barcelona, Spain**
-- 🗣️ Spanish (native) · Catalan (B2) · English (B2)
+- 🗣️ Spanish (native) · English (C1) · Catalan (B2) 
 ---
 
 ### 🛠️ Tech Stack
